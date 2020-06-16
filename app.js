@@ -12,7 +12,13 @@ app.get('/contact', function(req, res){
   res.sendFile('/contact.html')
 });
 app.get('/profile/:name', function(req, res){
-  res.render('profile');
+  var emergency = [
+    {unit: ' Police', location: 'Old Town', contact: 118},
+  {unit: ' Hospital', location: 'Molyko ', contact: 117},
+  {unit: ' Fire Brigard', location: 'Mulang ', contact: 119},
+  {unit: ' Social service', location: 'Fiango ', contact: 113}
+]
+  res.render('profile', {person: req.params.name, emergency: emergency});
 });
 
 
