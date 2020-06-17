@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<style>
+  body{background: #0d1521; font-family: verdana; color: #fff; padding: 30px}
+h1{font-size: 48px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
+p{font-size: 16px; text-align: center; }
+</style>
+ <title>CrimeFighter</title>
+  </head>
+  <body>
+<%- include('partials/nav.ejs') -%>
+
+<h1>CRIME WATCH</h1>
+<h4>Contact Us</h4>
+<p>Crime watch is composed of various divisions or units...In case you have to report a crime,call the following numbers.
+</p>
+<h3> Offices and Numbers </h3>
+
+
+<h2><strong>Unit:</strong> <%= emergency[0].unit %></h2>
+<h5><strong>Location:</strong> <%= emergency[0].location %></h5>
+<h5><strong>Contact:</strong> <%= emergency[0].contact %></h5>
+<h2><strong>Unit:</strong> <%= emergency[1].unit %></h2>
+<h5><strong>Location:</strong> <%= emergency[1].location %></h5>
+<h5><strong>Contact:</strong> <%= emergency[1].contact %></h5>
+<h2><strong>Unit:</strong> <%= emergency[2].unit %></h2>
+<h5><strong>Location:</strong> <%= emergency[2].location %></h5>
+<h5><strong>Contact:</strong> <%= emergency[2].contact %></h5>
+<h2><strong>Unit:</strong> <%= emergency[3].unit %></h2>
+<h5><strong>Location:</strong> <%= emergency[3].location %></h5>
+<h5><strong>Contact:</strong> <%= emergency[3].contact %></h5>
+
+</body>
+</html>
