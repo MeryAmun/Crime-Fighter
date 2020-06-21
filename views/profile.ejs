@@ -9,6 +9,7 @@ p{font-size: 16px; text-align: center; }
 
    </style>
  <title>The  Web</title>
+ <link href="/assets/styles.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
     <%- include('partials/nav.ejs') -%>
@@ -17,6 +18,7 @@ p{font-size: 16px; text-align: center; }
   headquaters of our <%= emergency[0].unit %>  at <%= emergency[0].location %> puts out this emergency number <%= emergency[0].contact %>
 In case of any crimes, or attempted crimes, please call and report.
 Thank you.</p>
+<%- include('partials/footer'); -%>
 </body>
 
 
