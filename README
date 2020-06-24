@@ -1,0 +1,8 @@
+# Crime-Watch
+Crime Watch is a demo site built with Node Js and Express, ejs template engines
+This project is done using Express in Node js.I started by creating a packege.josn file by running npm init.
+Then I proceeded to install Express and require it in the app.js file.ThenI created te epress() app, and set it to listen to a particular port
+in this case port 3500, using http verbs,particularly the GET request,
+and after installing ejs to create a view engine, i was able to serve up files to the browser using the render() method.Then I used  the  partials method 
+<%- include ('partial/file') -%> to parse files like the navbar and footer to the various pages.
+In order to parse images and css styles,i used the app.use('/assets', express.static('assets')) method in express.
