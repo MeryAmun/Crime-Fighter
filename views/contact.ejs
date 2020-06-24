@@ -10,39 +10,78 @@
 
 <h1>CRIME WATCH</h1>
 </div>
-<section class=""></section>
-<h4>Contact Us</h4>
-<p>Crime watch is composed of various divisions or units...In case you have to report a crime,call the following numbers.
+
+<section class="address">
+<h2>Contact Us</h2>
+<br>
+<br>
+<br>
+<p>Crime watch is composed of various divisions or units...In case you have to report a crime in progress or you spotted a wanted criminal call the following units.Crime watch also responds to accidents,fire disasters, and other emerrgencies like fires, suicide attemps etc.You can also report cases of gender based violence and child abuse by calling the social services.Remember that evil will prevail as long as the good people do nothing.
+  So lets work together and make our neigbourhoods and loved ones safe.
 </p>
-<h3> Offices and Numbers </h3>
-
-
+<br>
+<br>
+<br>
+<div class="sos">
+  <div>
 <h2><strong>Unit:</strong> <%= emergency[0].unit %></h2>
+<br>
+<br>
 <h5><strong>Location:</strong> <%= emergency[0].location %></h5>
+<br>
+<br>
 <h5><strong>Contact:</strong> <%= emergency[0].contact %></h5>
+<br>
+<br>
+<br>
 <h2><strong>Unit:</strong> <%= emergency[1].unit %></h2>
+<br>
 <h5><strong>Location:</strong> <%= emergency[1].location %></h5>
+<br>
 <h5><strong>Contact:</strong> <%= emergency[1].contact %></h5>
+<br>
+<br>
+<br>
 <h2><strong>Unit:</strong> <%= emergency[2].unit %></h2>
+<br>
 <h5><strong>Location:</strong> <%= emergency[2].location %></h5>
+<br>
 <h5><strong>Contact:</strong> <%= emergency[2].contact %></h5>
+<br>
+<br>
+<br>
 <h2><strong>Unit:</strong> <%= emergency[3].unit %></h2>
+<br>
 <h5><strong>Location:</strong> <%= emergency[3].location %></h5>
+<br>
 <h5><strong>Contact:</strong> <%= emergency[3].contact %></h5>
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+</div>
+<div class="social">
+  <h2>Social Services</h2>
+  <br>
+  <br>
+  <br>
+  <p>A lot of people dont know where to turn to,when experiencing violations of the physical intergrity because of shame and fear of stigma.Here at crime watch,we have a department with a well trained and of course heartwarming team of people who have had such experiences and are ready to listen to your story and and give you that firt aid on how to deal with the pain.
+    You can therefore contact the social services unit to speak with a counsellor, a therapist, a social service officer and even a lawyer for legal counsel in case of; gender based violence, rape, child abuse or sexuall harassment at home,in shool, or the  workplace.Fill out the contact form below, we guarantee that everything about you will be kept descrete until you decide to proceed to a law suite.</p>
+  <br>
+  <br>
+  <br>
+  <h3>Contact Form</h3>
+  <br>
+  <br>
+  <form id="contact-form">
+    <label for="who">Who do you want to speak to?</label>
+    <input type="text" id="name" value=""/>
+    <br>
+    <br>
+    <label for="department">What department: </label>
+    <input type="text"  id="department" placeholder="Social Services" required />
+</div>
+</div>
+</section>
 <br>
 <br>
 <br>

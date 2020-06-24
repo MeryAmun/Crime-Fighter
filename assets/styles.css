@@ -53,7 +53,7 @@ p {
 
   .show {
 
-	background-image: url("/images/im1.jpg");
+	background-image: url("./images/im1.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
     height: 100vh;
@@ -63,7 +63,7 @@ p {
 
 .contact {
 
-background-image: url("/images/im1.jpg");
+background-image: url("./images/im1.jpg");
 background-size: cover;
 background-repeat: no-repeat;
   height: 100vh;
@@ -71,10 +71,15 @@ background-repeat: no-repeat;
 
 }
 
-/*.sect {
-    background: #0d1521;
-    	color: white;
-}*/
+.address {
+  text-align: center;
+  margin: 20px;
+}
+
+.sect {
+    margin: 30px;
+  font-size: 2rem;
+}
 
 
 
