@@ -2,16 +2,14 @@
 <html lang="en">
 <head>
 <link href="/assets/styles.css" rel="stylesheet" type="text/css"/>
- <title>CrimeFighter</title>
-  </head>
-  <body>
-    <div class="contact">
+
 <%- include('partials/nav.ejs') -%>
 
 <h1>CRIME WATCH</h1>
 </div>
 
 <section class="address">
+  <div class="notice">
 <h2>Contact Us</h2>
 <br>
 <br>
@@ -19,11 +17,12 @@
 <p>Crime watch is composed of various divisions or units...In case you have to report a crime in progress or you spotted a wanted criminal call the following units.Crime watch also responds to accidents,fire disasters, and other emerrgencies like fires, suicide attemps etc.You can also report cases of gender based violence and child abuse by calling the social services.Remember that evil will prevail as long as the good people do nothing.
   So lets work together and make our neigbourhoods and loved ones safe.
 </p>
+</div>
 <br>
 <br>
 <br>
 <div class="sos">
-  <div>
+ <div>
 <h2><strong>Unit:</strong> <%= emergency[0].unit %></h2>
 <br>
 <br>
@@ -59,29 +58,49 @@
 <br>
 <br>
 </div>
+</section>
 <div class="social">
+  <div class="help">
   <h2>Social Services</h2>
   <br>
   <br>
   <br>
   <p>A lot of people dont know where to turn to,when experiencing violations of the physical intergrity because of shame and fear of stigma.Here at crime watch,we have a department with a well trained and of course heartwarming team of people who have had such experiences and are ready to listen to your story and and give you that firt aid on how to deal with the pain.
-    You can therefore contact the social services unit to speak with a counsellor, a therapist, a social service officer and even a lawyer for legal counsel in case of; gender based violence, rape, child abuse or sexuall harassment at home,in shool, or the  workplace.Fill out the contact form below, we guarantee that everything about you will be kept descrete until you decide to proceed to a law suite.</p>
+    You can therefore contact the social services unit to speak with a counsellor, a therapist, a social service officer and even a lawyer for legal counsel in case of; gender based violence, rape, child abuse or sexuall harassment at home,in shool, or the  workplace.Fill out the contact form below,to share with us your ideas on how to better target victims and whatever moral support tou wish to give us will be highly appreciated.Below is a list of persons to contact to speak,share your experiences and heal.
+    The healing process begins when you share your story.
+     We guarantee that everything about you will be kept descrete until and unless you decide to legal measures.</p>
+  </div>
   <br>
   <br>
+  <ul class="list">
+  <h4>Start a converstation with the Team</h4>
+  <li> <a href="/profile/Ndifor Eyambe">Ndifor Eyambe</a></li>
+    <li> <a href="/profile/Shinyuy Fonyuy">Shinyuy Fonyuy</a></li>
+      <li> <a href="/profile/Bobga Fokum">Bobga Fokum</a></li>
+        <li> <a href="/profile/Ngoin Nsama">Ngoin Nsama</a></li>
+ <br>
+ <div>
+  <h3 id="contact-form">Contact Form</h3>
   <br>
-  <h3>Contact Form</h3>
   <br>
-  <br>
-  <form id="contact-form">
-    <label for="who">Who do you want to speak to?</label>
-    <input type="text" id="name" value=""/>
+  <form id="contact-form" method="POST" action="/contact">
+    <!--<label for="who">Who do you want to speak to?</label>
+    <input type="text" name="who" value="<%= qs.person %>" />
     <br>
-    <br>
-    <label for="department">What department: </label>
-    <input type="text"  id="department" placeholder="Social Services" required />
+    <label for="department">What department? </label>
+  <input type="text"  name="department" value="<%= qs.dept %>" />
+  <br>-->
+  <label for="email">Email Address:</label>
+  <input type="text" name="email"/>
+  <br>
+  <textarea name="message" cols="30"
+  rows="10" placeholder="Type message"> Type Message
+  </textarea>
+  <br>
+  <input type="submit" class="submit" value="Submit"/>
+</form>
 </div>
 </div>
-</section>
 <br>
 <br>
 <br>

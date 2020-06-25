@@ -12,14 +12,35 @@ p{font-size: 16px; text-align: center; }
  <link href="/assets/styles.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-    <%- include('partials/nav.ejs') -%>
- <h1>Welcome to the Emmergency unit of Crime Watch</h1>
-  <p>Good afternoon fellow good citezens of our beloved fatherland,I am  <%= person %>,In our effort to curb crime and ensure your safety,  the
-  headquaters of our <%= emergency[0].unit %>  at <%= emergency[0].location %> puts out this emergency number <%= emergency[0].contact %>
-In case of any crimes, or attempted crimes, please call and report.
-Thank you.</p>
+    <div class="profile">
+<%- include('partials/nav.ejs') -%>
+
+<h1>CRIME Watch</h1>
+</div class="chat">
+<br>
+<br>
+<div>
+ <h3>Welcome to the Socials unit of Crime Watch</h3>
+ <br>
+ <br>
+<p> To begin a conversation with <%= person %>, click the link below<br>
+  <br>
+  <br>
+Thank you.
+<br>
+<br>
+<a href="/chat"><button class="submit">Start Conversation</button</a>
+</p>
+<br>
+<br>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <%- include('partials/footer'); -%>
 </body>
-
-
- </html>
+</html>
